@@ -1,0 +1,51 @@
+.footer__lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__lists h3 {
+  font-weight: lighter;
+}
+
+.footer__lists a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.footer__lists a:hover {
+  color: #fea500;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__container {
+    background: #222222;
+    color: #ffffff;
+  }
+  .footer__lists {
+    display: flex;
+    flex-direction: column;
+  }
+  .company__info,
+  .customer__service,
+  .my__account,
+  .contact__us,
+  .footer__copyright {
+    margin: 2rem 0 0 2rem;
+  }
+  .footer__lists hr {
+    width: 95%;
+    margin-top: 0.5rem;
+  }
+
+  .footer__lists h3 {
+    font-size: 16px;
+  }
+  .footer__lists ul {
+    margin-top: 1rem;
+  }
+
+  .footer__lists a {
+    font-size: 14px;
+  }
+}
