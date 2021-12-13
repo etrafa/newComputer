@@ -21,6 +21,7 @@
   .footer__container {
     background: #222222;
     color: #ffffff;
+    margin-top: 4rem;
   }
   .footer__lists {
     display: flex;
@@ -47,5 +48,8 @@
 
   .footer__lists a {
     font-size: 14px;
+  }
+  .gmail__hr {
+    margin-top: 2rem;
   }
 }

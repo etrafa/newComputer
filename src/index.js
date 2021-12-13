@@ -1,15 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Banner from "./Banner/Banner";
-import BestSellers from "./BestSellers/BestSellers";
-import Footer from "./Footer/Footer";
-import "./index.css";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Banner />
-    <BestSellers />
-    {/* <Footer /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

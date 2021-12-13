@@ -17,6 +17,8 @@
 @media only screen and (min-width: 892px) {
   .banner__container {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  }
+  .banner__container {
+    padding: 0 5rem;
   }
 }
