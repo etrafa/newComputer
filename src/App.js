@@ -18,6 +18,11 @@ import BayernMunichTshirtAway from "./BestSellers/BayernMunichTshirtAway";
 import PsgTshirtHome from "./BestSellers/Psg-tshirt-home";
 import ChelseaTshirtHome from "./BestSellers/Chelsea-tshirt-home";
 import TottenhamTshirtAway from "./BestSellers/Tottenham-tshirt-away";
+import AboutUs from "./Footer/AboutUs";
+import Delivery from "./Footer/Delivery";
+import Privacy from "./Footer/Privacy";
+import Terms from "./Footer/Terms";
+import SizeChart from "./Footer/SizeChart";
 
 function App() {
   return (
@@ -70,9 +75,14 @@ function App() {
             path="tottenham-tshirt-21/22-away"
             element={<TottenhamTshirtAway />}
           ></Route>
+          <Route path="/about-us" element={<AboutUs />}></Route>
+          <Route path="/delivery-guarantee" element={<Delivery />}></Route>
+          <Route path="/privacy-policy" element={<Privacy />}></Route>
+          <Route path="/terms-of-use" element={<Terms />}></Route>
+          <Route path="/size-chart" element={<SizeChart />}></Route>
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

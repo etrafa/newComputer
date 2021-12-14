@@ -1,5 +1,6 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { FaCcMastercard } from "@fortawesome/free-solid-svg-icons";
+import visa from "./footer-asset/visa.png";
+import masterCard from "./footer-asset/mastercard.png";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -12,16 +13,16 @@ const Footer = () => {
             <hr />
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <Link to={"/about-us"}>About Us</Link>
               </li>
               <li>
-                <a href="#">Delivery Guarantee</a>
+                <Link to={"/delivery-guarantee"}>Delivery Guarantee</Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
               </li>
               <li>
-                <a href="#">Terms of Use</a>
+                <Link to={"/terms-of-use"}>Terms of Use</Link>
               </li>
             </ul>
           </div>
@@ -30,19 +31,19 @@ const Footer = () => {
             <hr />
             <ul>
               <li>
-                <a href="#">Size Chart</a>
+                <Link to={"/size-chart"}>Size Chart</Link>
               </li>
               <li>
-                <a href="#">FAQ & Help</a>
+                <Link to={"/faq-help"}>FAQ & Help</Link>
               </li>
               <li>
-                <a href="#">Shipping & Delivery</a>
+                <Link to={"/shipping-delivery"}>Shipping & Delivery</Link>
               </li>
               <li>
-                <a href="#">Return Policy</a>
+                <Link to={"/return-policy"}>Return Policy</Link>
               </li>
               <li>
-                <a href="#">Payment Method</a>
+                <Link to={"/payment-method"}>Payment Method</Link>
               </li>
             </ul>
           </div>
@@ -51,19 +52,19 @@ const Footer = () => {
             <hr />
             <ul>
               <li>
-                <a href="#">LOG IN</a>
+                <Link to={"/log-in"}>LOG IN</Link>
               </li>
               <li>
-                <a href="#">SIGN UP</a>
+                <Link to={"/sign-up"}>SIGN UP</Link>
               </li>
               <li>
-                <a href="#">My Account</a>
+                <Link to={"/my-account"}>My Account</Link>
               </li>
               <li>
-                <a href="#">My Orders</a>
+                <Link to={"/my-orders"}>My Orders</Link>
               </li>
               <li>
-                <a href="#">Forget Password</a>
+                <Link to={"/forget-password"}>Forget Password</Link>
               </li>
             </ul>
           </div>
@@ -80,9 +81,12 @@ const Footer = () => {
         <hr className="gmail__hr" />
         <div className="footer__copyright">
           <div className="footer__copyright__left">
-            © 2021 HN Football Store All rights reserved.
+            © 2021 <span>EL Store</span> All rights reserved.
           </div>
-          <div className="footer__copyright__right"></div>
+          <div className="footer__copyright__right">
+            <img src={visa} alt="" />
+            <img src={masterCard} alt="" />
+          </div>
         </div>
       </div>
     </>
