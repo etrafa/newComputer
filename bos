@@ -1,5 +1,0 @@
-<img className="mainShirt__front" src={liverpoolFront} alt="" />
-<div className="mainShirt__small">
-  <img src={liverpoolFrontSmall} alt="" />
-  <img src={liverpoolBackSmall} alt="" />
-  <img src={logo} alt="" />

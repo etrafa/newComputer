@@ -1,17 +1,31 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
-import ajaxFront from "./bestSellers-asset/ajaxFront.jpeg";
-import ajaxFrontSmall from "./bestSellers-asset/ajaxFrontSmall.jpg";
+import manUnitedFront from "./bestSellers-asset/manUnitedFront.png";
+import manUnitedBack from "./bestSellers-asset/manUnitedBack.png";
+import manUnitedFrontSmall from "./bestSellers-asset/manUnitedFrontSmall.png";
+import manUnitedBackSmall from "./bestSellers-asset/manUnitedBackSmall.png";
 import "../Pages/ShirtSales.css";
 
-const AjaxTshirtThird = () => {
+const ManUnitedTshirtHome = () => {
+  const [image, setImage] = useState(manUnitedFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={ajaxFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={ajaxFrontSmall} alt="" />
+        <img
+          src={manUnitedFrontSmall}
+          onClick={() => setImage(manUnitedFront)}
+          alt=""
+        />
+        <img
+          src={manUnitedBackSmall}
+          onClick={() => setImage(manUnitedBack)}
+          alt=""
+        />
       </div>
-      <h1>AJAX THIRD FOOTBALL SHIRT 21/22</h1>
+      <h1>MANCHESTER UNITED HOME FOOTBALL SHIRT 21/22</h1>
       <hr />
       <div className="shirtSales__price__container">
         <p className="shirtSales__price">$50.00</p>
@@ -102,11 +116,12 @@ const AjaxTshirtThird = () => {
             checkout. Our variety of international shipping methods will have
             your jersey in your hands in no time!
           </p>
-          <img src={ajaxFront} alt="" />
+          <img src={manUnitedFront} alt="" />
+          <img src={manUnitedBack} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default AjaxTshirtThird;
+export default ManUnitedTshirtHome;

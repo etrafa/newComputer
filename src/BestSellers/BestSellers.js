@@ -9,11 +9,11 @@ const HomePageSales = () => {
     <React.Fragment>
       <div className="sales__container">
         {bestSellersData.map((sales) => {
-          const { id, text, image } = sales;
+          const { id, text, image, route } = sales;
           return (
             <div key={id}>
               <img src={image} alt="" />
-              <Link to={`/${text}`}>{text}</Link>
+              <Link to={route}>{text}</Link>
               <p className="best__seller__price">$ 50.00</p>
             </div>
           );

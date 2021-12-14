@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -68,7 +69,9 @@ const Header = () => {
         </div>
       </div>
       <div className="logo">
-        <img src={logo} alt="" />
+        <Link to={"/"}>
+          <img src={logo} alt="" />
+        </Link>
       </div>
     </>
   );

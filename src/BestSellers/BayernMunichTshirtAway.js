@@ -1,17 +1,31 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
-import ajaxFront from "./bestSellers-asset/ajaxFront.jpeg";
-import ajaxFrontSmall from "./bestSellers-asset/ajaxFrontSmall.jpg";
+import bayernFront from "./bestSellers-asset/bayernFront.png";
+import bayernBack from "./bestSellers-asset/bayernBack.png";
+import bayernFrontSmall from "./bestSellers-asset/bayernFrontSmall.png";
+import bayernBackSmall from "./bestSellers-asset/bayernBackSmall.png";
 import "../Pages/ShirtSales.css";
 
-const AjaxTshirtThird = () => {
+const BayernMunichTshirtAway = () => {
+  const [image, setImage] = useState(bayernFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={ajaxFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={ajaxFrontSmall} alt="" />
+        <img
+          src={bayernFrontSmall}
+          onClick={() => setImage(bayernFront)}
+          alt=""
+        />
+        <img
+          src={bayernBackSmall}
+          onClick={() => setImage(bayernBack)}
+          alt=""
+        />
       </div>
-      <h1>AJAX THIRD FOOTBALL SHIRT 21/22</h1>
+      <h1>BAYERN MUNICH AWAY FOOTBALL SHIRT 21/22</h1>
       <hr />
       <div className="shirtSales__price__container">
         <p className="shirtSales__price">$50.00</p>
@@ -102,11 +116,12 @@ const AjaxTshirtThird = () => {
             checkout. Our variety of international shipping methods will have
             your jersey in your hands in no time!
           </p>
-          <img src={ajaxFront} alt="" />
+          <img src={bayernFront} alt="" />
+          <img src={bayernBack} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default AjaxTshirtThird;
+export default BayernMunichTshirtAway;

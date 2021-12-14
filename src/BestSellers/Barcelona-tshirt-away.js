@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
-import ajaxFront from "./bestSellers-asset/ajaxFront.jpeg";
-import ajaxFrontSmall from "./bestSellers-asset/ajaxFrontSmall.jpg";
+import barcelonaFront from "./bestSellers-asset/barcelonaFront.jpg";
+import barcelonaFrontSmall from "./bestSellers-asset/barcelonaFrontSmall.jpg";
 import "../Pages/ShirtSales.css";
 
-const AjaxTshirtThird = () => {
+const BarcelonaTshirtAway = () => {
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={ajaxFront} alt="" />
+      <img className="mainShirt__front" src={barcelonaFront} alt="" />
       <div className="mainShirt__small">
-        <img src={ajaxFrontSmall} alt="" />
+        <img src={barcelonaFrontSmall} alt="" />
       </div>
-      <h1>AJAX THIRD FOOTBALL SHIRT 21/22</h1>
+      <h1>BARCELONA AWAY FOOTBALL SHIRT 21/22</h1>
       <hr />
       <div className="shirtSales__price__container">
         <p className="shirtSales__price">$50.00</p>
@@ -102,11 +102,11 @@ const AjaxTshirtThird = () => {
             checkout. Our variety of international shipping methods will have
             your jersey in your hands in no time!
           </p>
-          <img src={ajaxFront} alt="" />
+          <img src={barcelonaFrontSmall} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default AjaxTshirtThird;
+export default BarcelonaTshirtAway;

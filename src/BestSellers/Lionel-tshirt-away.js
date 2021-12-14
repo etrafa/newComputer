@@ -1,17 +1,27 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
-import ajaxFront from "./bestSellers-asset/ajaxFront.jpeg";
-import ajaxFrontSmall from "./bestSellers-asset/ajaxFrontSmall.jpg";
+import messiFront from "./bestSellers-asset/messiAwayFront.png";
+import messiBack from "./bestSellers-asset/messiAwayBack.png";
+import messiFrontSmall from "./bestSellers-asset/messiAwayFrontSmall.png";
+import messiBackSmall from "./bestSellers-asset/messiAwayFrontSmall.png";
 import "../Pages/ShirtSales.css";
 
-const AjaxTshirtThird = () => {
+const LionelTshirtAway = () => {
+  const [image, setImage] = useState(messiFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={ajaxFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={ajaxFrontSmall} alt="" />
+        <img
+          src={messiFrontSmall}
+          onClick={() => setImage(messiFront)}
+          alt=""
+        />
+        <img src={messiBackSmall} onClick={() => setImage(messiBack)} alt="" />
       </div>
-      <h1>AJAX THIRD FOOTBALL SHIRT 21/22</h1>
+      <h1>PARIS SAINT-GERMAIN AWAY LIONEL MESSI #30 FOOTBALL SHIRT 21/22</h1>
       <hr />
       <div className="shirtSales__price__container">
         <p className="shirtSales__price">$50.00</p>
@@ -102,11 +112,12 @@ const AjaxTshirtThird = () => {
             checkout. Our variety of international shipping methods will have
             your jersey in your hands in no time!
           </p>
-          <img src={ajaxFront} alt="" />
+          <img src={messiFront} alt="" />
+          <img src={messiBack} alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default AjaxTshirtThird;
+export default LionelTshirtAway;
