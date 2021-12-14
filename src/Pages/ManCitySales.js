@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import manCityFront from "./mancity-asset/mancity-front.png";
@@ -8,12 +9,22 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./ShirtSales.css";
 
 const ManCitySales = () => {
+  const [image, setImage] = useState(manCityFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={manCityFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={manCityFrontSmall} alt="" />
-        <img src={manCityBackSmall} alt="" />
+        <img
+          src={manCityFrontSmall}
+          onClick={() => setImage(manCityFront)}
+          alt=""
+        />
+        <img
+          src={manCityBackSmall}
+          onClick={() => setImage(manCityBack)}
+          alt=""
+        />
       </div>
       <h1>MANCHSTER CITY HOME FOOTBALL SHIRT 21/22</h1>
       <hr />

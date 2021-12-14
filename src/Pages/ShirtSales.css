@@ -15,6 +15,7 @@
 .mainShirt__small img {
   margin: 2rem 0.5rem;
   border: 1px solid #808080;
+  cursor: pointer;
 }
 
 .shirtSales__container h1 {

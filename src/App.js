@@ -6,6 +6,8 @@ import ManUnitedSales from "./Pages/ManUnitedSales";
 import ArsenalSales from "./Pages/ArsenalSales";
 import LiverpoolSales from "./Pages/LiverpoolSales";
 import ManCitySales from "./Pages/ManCitySales";
+import BestSellers from "./BestSellers/BestSellers";
+import AjaxTshirtThird from "./BestSellers/Ajax-tshirt-third";
 import "./index.css";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path="/mancity-sales" element={<ManCitySales />}></Route>
           <Route path="/manunited-sales" element={<ManUnitedSales />}></Route>
           <Route path="/arsenal-sales" element={<ArsenalSales />}></Route>
+          {/* <Route path=element={<AjaxTshirtThird />}></Route> */}
         </Routes>
       </Router>
       <Footer />

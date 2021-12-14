@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import arsenalFront from "./arsenal-asset/arsenal-front.png";
@@ -8,12 +9,22 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./ShirtSales.css";
 
 const ArsenalSales = () => {
+  const [image, setImage] = useState(arsenalFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={arsenalFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={arsenalFrontSmall} alt="" />
-        <img src={arsenalBackSmall} alt="" />
+        <img
+          src={arsenalFrontSmall}
+          onClick={() => setImage(arsenalFront)}
+          alt=""
+        />
+        <img
+          src={arsenalBackSmall}
+          onClick={() => setImage(arsenalBack)}
+          alt=""
+        />
       </div>
       <h1>ARSENAL HOME FOOTBALL SHIRT 21/22</h1>
       <hr />

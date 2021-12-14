@@ -1,19 +1,29 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
 import liverpoolFront from "./liverpool-asset/liverpool-front.png";
 import liverpoolBack from "./liverpool-asset/liverpool-back.png";
 import liverpoolFrontSmall from "./liverpool-asset/liverpool-front-small.png";
 import liverpoolBackSmall from "./liverpool-asset/liverpool-back-small.png";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./ShirtSales.css";
 
 const LiverpoolSales = () => {
+  const [image, setImage] = useState(liverpoolFront);
+
   return (
     <div className="shirtSales__container">
-      <img className="mainShirt__front" src={liverpoolFront} alt="" />
+      <img className="mainShirt__front" src={image} alt="" />
       <div className="mainShirt__small">
-        <img src={liverpoolFrontSmall} alt="" />
-        <img src={liverpoolBackSmall} alt="" />
+        <img
+          src={liverpoolFrontSmall}
+          onClick={() => setImage(liverpoolFront)}
+          alt=""
+        />
+        <img
+          src={liverpoolBackSmall}
+          onClick={() => setImage(liverpoolBack)}
+          alt=""
+        />
       </div>
       <h1>LIVERPOOL AWAY FOOTBALL SHIRT 21/22</h1>
       <hr />
