@@ -1,4 +1,4 @@
-import "./AboutUs.css";
+import "./FooterItems.css";
 
 const AboutUs = () => {
   return (

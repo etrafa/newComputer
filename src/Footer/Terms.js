@@ -1,4 +1,5 @@
-import "./AboutUs.css";
+import "./FooterItems.css";
+
 const Terms = () => {
   return (
     <div className="terms__container">

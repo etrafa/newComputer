@@ -1,0 +1,59 @@
+.about__us__container h1,
+.delivery__container h1,
+.privacy__container h1,
+.terms__container h1,
+.faqHelp__container h1,
+.ship__container h1,
+.returnPolicy__container h1,
+.payment__container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about__us__text,
+.delivery__text,
+.privacy__text,
+.terms__text,
+.faqHelp__text,
+.shipping__text,
+.returnPolicy__text,
+.payment__text {
+  border: 1px dotted #444444;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.about__us__text p,
+.delivery__text p,
+.privacy__text p,
+.terms__text p,
+.faqHelp__text p,
+.shipping__text p,
+.returnPolicy__text p,
+.payment__text p {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.faqHelp__text p,
+.shipping__text p,
+.returnPolicy__text p,
+.payment__text p {
+  line-height: 25px;
+}
+
+.faqHelp__text h4,
+.shipping__text h4,
+.returnPolicy__text h4 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.payment__text img {
+  max-width: 100%;
+  height: auto;
+}

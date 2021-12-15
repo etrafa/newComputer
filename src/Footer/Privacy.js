@@ -1,4 +1,5 @@
-import "./AboutUs.css";
+import "./FooterItems.css";
+
 const Privacy = () => {
   return (
     <div className="privacy__container">

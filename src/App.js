@@ -23,6 +23,10 @@ import Delivery from "./Footer/Delivery";
 import Privacy from "./Footer/Privacy";
 import Terms from "./Footer/Terms";
 import SizeChart from "./Footer/SizeChart";
+import FaqHelp from "./Footer/Faq-help";
+import Shipping from "./Footer/Shipping";
+import ReturnPolicy from "./Footer/ReturnPolicy";
+import PaymentMethod from "./Footer/PaymentMehdod";
 
 function App() {
   return (
@@ -31,55 +35,56 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/liverpool-sales" element={<LiverpoolSales />}></Route>
-          <Route path="/mancity-sales" element={<ManCitySales />}></Route>
-          <Route path="/manunited-sales" element={<ManUnitedSales />}></Route>
-          <Route path="/arsenal-sales" element={<ArsenalSales />}></Route>
+          <Route path="/liverpool-sales" element={<LiverpoolSales />} />
+          <Route path="/mancity-sales" element={<ManCitySales />} />
+          <Route path="/manunited-sales" element={<ManUnitedSales />} />
+          <Route path="/arsenal-sales" element={<ArsenalSales />} />
           <Route
             path="/ajax-tshirt-21/22-third"
             element={<AjaxTshirtThird />}
-          ></Route>
+          />
           <Route
             path="psg/lionel_messi-21/22-away"
             element={<LionelTshirtAway />}
-          ></Route>
+          />
           <Route
             path="psg/lionel_messi-21/22-home"
             element={<LionelTshirtHome />}
-          ></Route>
+          />
           <Route
             path="barcelona-tshirt-21/22-away"
             element={<BarcelonaTshirtAway />}
-          ></Route>
+          />
           <Route
             path="manunited-tshirt-21/22-home"
             element={<ManUnitedTshirtHome />}
-          ></Route>
+          />
           <Route
             path="intermilan-tshirt-21/22-home"
             element={<InterMilanTshirtHome />}
-          ></Route>
+          />
           <Route
             path="bayern-munich-tshirt-21/22-away"
             element={<BayernMunichTshirtAway />}
-          ></Route>
-          <Route
-            path="psg-tshirt-21/22-home"
-            element={<PsgTshirtHome />}
-          ></Route>
+          />
+          <Route path="psg-tshirt-21/22-home" element={<PsgTshirtHome />} />
           <Route
             path="chelsea-tshirt-21/22-home"
             element={<ChelseaTshirtHome />}
-          ></Route>
+          />
           <Route
             path="tottenham-tshirt-21/22-away"
             element={<TottenhamTshirtAway />}
-          ></Route>
-          <Route path="/about-us" element={<AboutUs />}></Route>
-          <Route path="/delivery-guarantee" element={<Delivery />}></Route>
-          <Route path="/privacy-policy" element={<Privacy />}></Route>
-          <Route path="/terms-of-use" element={<Terms />}></Route>
-          <Route path="/size-chart" element={<SizeChart />}></Route>
+          />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/delivery-guarantee" element={<Delivery />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/terms-of-use" element={<Terms />} />
+          <Route path="/size-chart" element={<SizeChart />} />
+          <Route path="/faq-help" element={<FaqHelp />} />
+          <Route path="/shipping-delivery" element={<Shipping />} />
+          <Route path="/return-policy" element={<ReturnPolicy />} />
+          <Route path="/payment-method" element={<PaymentMethod />} />
         </Routes>
         <Footer />
       </Router>
