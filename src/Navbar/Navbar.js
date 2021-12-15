@@ -21,31 +21,29 @@ const Header = () => {
       <div className="header__container">
         <div
           className={
-            isActive ? "hamburger__menu__content" : "hamburgerMenu__icon"
+            isActive
+              ? "hamburger__menu__content__deactive"
+              : "hamburger__menu__content"
           }
         >
           <FontAwesomeIcon
-            className={isActive ? "windowClose__icon" : "hamburgerMenu__icon"}
+            className={isActive ? "windowClose__icon" : "windowClose__icon"}
             onClick={handleToggle}
             icon={faWindowClose}
           ></FontAwesomeIcon>
-          <a href="#">HOME</a>
+          <Link to={"/"}>HOME</Link>
           <hr />
-          <a href="#">NEW ARRIVALS</a>
+          <Link to={"./national-team"}>NATIONAL TEAM</Link>
           <hr />
-          <a href="#">NATIONAL TEAM</a>
+          <Link to={"./premier-leauge"}>PREMIER LEAUGE</Link>
           <hr />
-          <a href="#">PREMIER LEAUGE</a>
+          <Link to={"./bundesliga"}>BUNDESLIGA</Link>
           <hr />
-          <a href="#">BUNDESLIGA</a>
+          <Link to={"./laliga-leauge"}>LA LIGA</Link>
           <hr />
-          <a href="#">SERIA A LEAUGE</a>
+          <Link to={"./ligue-one"}>LIGUE 1</Link>
           <hr />
-          <a href="#">LA LIGA LEUAGE</a>
-          <hr />
-          <a href="#">LIGUE 1</a>
-          <hr />
-          <a href="#">OTHER CLUBS</a>
+          <Link to={"./other-clubs"}>OTHER CLUBS</Link>
           <hr />
         </div>
         <FontAwesomeIcon

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./index.css";
 import Navbar from "./Navbar/Navbar";
 import HomePage from "./Homepage/HomePage";
 import Footer from "./Footer/Footer";
@@ -6,12 +7,10 @@ import ManUnitedSales from "./Pages/ManUnitedSales";
 import ArsenalSales from "./Pages/ArsenalSales";
 import LiverpoolSales from "./Pages/LiverpoolSales";
 import ManCitySales from "./Pages/ManCitySales";
-import BestSellers from "./BestSellers/BestSellers";
 import AjaxTshirtThird from "./BestSellers/Ajax-tshirt-third";
 import LionelTshirtAway from "./BestSellers/Lionel-tshirt-away";
 import LionelTshirtHome from "./BestSellers/Lionel-tshirt-home";
 import BarcelonaTshirtAway from "./BestSellers/Barcelona-tshirt-away";
-import "./index.css";
 import ManUnitedTshirtHome from "./BestSellers/ManUnited-tshirt-home";
 import InterMilanTshirtHome from "./BestSellers/InterMilan-tshirt-home";
 import BayernMunichTshirtAway from "./BestSellers/BayernMunichTshirtAway";
@@ -27,6 +26,12 @@ import FaqHelp from "./Footer/Faq-help";
 import Shipping from "./Footer/Shipping";
 import ReturnPolicy from "./Footer/ReturnPolicy";
 import PaymentMethod from "./Footer/PaymentMehdod";
+import NationalTeam from "./Leauges/NationalTeam";
+import PremierLeauge from "./Leauges/PremierLeauge";
+import BundesLiga from "./Leauges/BundesLiga";
+import LaLiga from "./Leauges/LaLiga";
+import LeaugeOne from "./Leauges/LeuageOne";
+import OtherClub from "./Leauges/OtherClub";
 
 function App() {
   return (
@@ -85,6 +90,12 @@ function App() {
           <Route path="/shipping-delivery" element={<Shipping />} />
           <Route path="/return-policy" element={<ReturnPolicy />} />
           <Route path="/payment-method" element={<PaymentMethod />} />
+          <Route path="/national-team" element={<NationalTeam />} />
+          <Route path="/premier-leauge" element={<PremierLeauge />} />
+          <Route path="/bundesliga" element={<BundesLiga />} />
+          <Route path="/laliga-leauge" element={<LaLiga />} />
+          <Route path="/ligue-one" element={<LeaugeOne />} />
+          <Route path="/other-clubs" element={<OtherClub />} />
         </Routes>
         <Footer />
       </Router>

@@ -20,6 +20,8 @@
   height: 100vh;
   width: 80%;
   position: absolute;
+}
+.hamburger__menu__content__deactive {
   display: none;
 }
 .hamburger__menu__content a {
