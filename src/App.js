@@ -32,11 +32,19 @@ import BundesLiga from "./Leauges/BundesLiga";
 import LaLiga from "./Leauges/LaLiga";
 import LeaugeOne from "./Leauges/LeuageOne";
 import OtherClub from "./Leauges/OtherClub";
+import ScrollToTop from "./ScrollToTop";
+import MexicoShirt from "./Leauges/MexicoShirt";
+import BrazilHome from "./Leauges/BrazilHome";
+import BrazilAway from "./Leauges/BrazilAway";
+import ColombiaAway from "./Leauges/ColombiaAway";
+import ArgentinaAway from "./Leauges/ArgentinaAway";
+import ArgentinaHome from "./Leauges/ArgentinaHome";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -96,6 +104,21 @@ function App() {
           <Route path="/laliga-leauge" element={<LaLiga />} />
           <Route path="/ligue-one" element={<LeaugeOne />} />
           <Route path="/other-clubs" element={<OtherClub />} />
+          <Route path="/mexico-tshirt-21/22-home" element={<MexicoShirt />} />
+          <Route path="/brazil-tshirt-21/22-home" element={<BrazilHome />} />
+          <Route path="/brazil-tshirt-21/22-away" element={<BrazilAway />} />
+          <Route
+            path="/colombia-tshirt-21/22-home"
+            element={<ColombiaAway />}
+          />
+          <Route
+            path="/argentina-tshirt-21/22-away"
+            element={<ArgentinaAway />}
+          />
+          <Route
+            path="/argentina-tshirt-21/22-home"
+            element={<ArgentinaHome />}
+          />
         </Routes>
         <Footer />
       </Router>
