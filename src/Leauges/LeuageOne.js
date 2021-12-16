@@ -4,10 +4,10 @@ import leaugeOneData from "./LeaugeOneData";
 import "./Leauges.css";
 
 const LeaugeOne = () => {
-  const [showItem, setShowItem] = useState(4);
+  const [showItem, setShowItem] = useState(6);
 
   const showMoreItems = () => {
-    setShowItem((previous) => previous + 4);
+    setShowItem((previous) => previous + 6);
   };
 
   return (

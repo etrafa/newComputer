@@ -21,7 +21,7 @@ const bundesLigaData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/o/borussia-dortmund-home-football-shirt-2122-1.jpeg",
     price: "$50.00",
-    route: "/borussia-dortmund-tshirt-21/22-away",
+    route: "/borussia-dortmund-tshirt-21/22-home",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const bundesLigaData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/1/8/1825b18e0382fc0015489aa79cc91a7a.png",
     price: "$50.00",
-    route: "/leipzig-tshirt-21/22-away",
+    route: "/leipzig-tshirt-21/22-home",
   },
   {
     id: 5,

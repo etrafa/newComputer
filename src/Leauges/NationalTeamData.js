@@ -102,14 +102,14 @@ const nationalTeamData = [
     text: "France Home Mbappé Football Shirt 20/21",
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/2/0/20210622-125847.png",
-    route: "/france-mbappé-tshirt-20/21-home",
+    route: "/france-mbappe-tshirt-20/21-home",
   },
   {
     id: 16,
     text: "France Away Mbappé Football Shirt 20/21",
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/2/0/20210622-125653.png",
-    route: "/france-mbappé-tshirt-20/21-away",
+    route: "/france-mbappe-tshirt-20/21-away",
   },
   {
     id: 17,

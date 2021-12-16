@@ -4,10 +4,10 @@ import "./Leauges.css";
 import bundesLigaData from "./BundesLigaData";
 
 const BundesLiga = () => {
-  const [showItem, setShowItems] = useState(4);
+  const [showItem, setShowItems] = useState(6);
 
   const showMoreItems = () => {
-    setShowItems((previous) => previous + 4);
+    setShowItems((previous) => previous + 6);
   };
 
   return (

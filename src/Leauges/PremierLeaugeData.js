@@ -67,7 +67,7 @@ const premierLeaugeData = [
     id: 9,
     text: "Arsenal Third Long Sleeve Football Shirt 21/22",
     image:
-      "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/l/i/liverpool-home-football-shirt-21-22_2.jpeg",
+      "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/r/arsenal-third-long-sleeve-football-shirt-21-22.jpeg",
     price: "$50.00",
     route: "/arsenal-third-tshirt-long-sleeve-21/22-home",
   },
@@ -93,7 +93,7 @@ const premierLeaugeData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/r/arsenal-away-long-sleeve-football-shirt-21-22.jpeg",
     price: "$55.00",
-    route: "/arsenal-away-football-short-21/22",
+    route: "/arsenal-away-football-shirt-long-21/22",
   },
   {
     id: 13,
@@ -133,7 +133,7 @@ const premierLeaugeData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/r/arsenal-home-football-shorts-21-22_4.jpeg",
     price: "$15.00",
-    route: "/arsenal-home-football-short-21/22",
+    route: "/arsenal-football-home-short-21/22",
   },
   {
     id: 18,
@@ -273,11 +273,11 @@ const premierLeaugeData = [
   },
   {
     id: 35,
-    text: "Manchster United Third Long Sleeve Football Shirt 21/22",
+    text: "Manchster United Away Long Sleeve Football Shirt 21/22",
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/m/a/manchester-united-away-long-sleeve-football-shirt-21-22.jpeg",
     price: "$55.00",
-    route: "/manunited-third-tshirt-long-sleeve-21/22-home",
+    route: "/manunited-away-tshirt-long-sleeve-21/22-home",
   },
   {
     id: 36,
