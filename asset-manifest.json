@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/newComputer/static/css/main.c9e2db45.chunk.css",
-    "main.js": "/newComputer/static/js/main.7c7f8c37.chunk.js",
-    "main.js.map": "/newComputer/static/js/main.7c7f8c37.chunk.js.map",
+    "main.css": "/newComputer/static/css/main.dd346106.chunk.css",
+    "main.js": "/newComputer/static/js/main.2f3c2cb6.chunk.js",
+    "main.js.map": "/newComputer/static/js/main.2f3c2cb6.chunk.js.map",
     "runtime-main.js": "/newComputer/static/js/runtime-main.0c4d8e9d.js",
     "runtime-main.js.map": "/newComputer/static/js/runtime-main.0c4d8e9d.js.map",
     "static/js/2.0c318b34.chunk.js": "/newComputer/static/js/2.0c318b34.chunk.js",
     "static/js/2.0c318b34.chunk.js.map": "/newComputer/static/js/2.0c318b34.chunk.js.map",
     "index.html": "/newComputer/index.html",
-    "static/css/main.c9e2db45.chunk.css.map": "/newComputer/static/css/main.c9e2db45.chunk.css.map",
+    "static/css/main.dd346106.chunk.css.map": "/newComputer/static/css/main.dd346106.chunk.css.map",
     "static/js/2.0c318b34.chunk.js.LICENSE.txt": "/newComputer/static/js/2.0c318b34.chunk.js.LICENSE.txt",
     "static/media/AjaxAway.6d3e9890.jpg": "/newComputer/static/media/AjaxAway.6d3e9890.jpg",
     "static/media/AjaxAwayShort.8dd6606a.jpg": "/newComputer/static/media/AjaxAwayShort.8dd6606a.jpg",
@@ -311,6 +311,7 @@
     "static/media/kroosHomeFrontSmall.a923b331.png": "/newComputer/static/media/kroosHomeFrontSmall.a923b331.png",
     "static/media/liverpool-back.2441c71f.png": "/newComputer/static/media/liverpool-back.2441c71f.png",
     "static/media/liverpool-front.ec9c6fc6.png": "/newComputer/static/media/liverpool-front.ec9c6fc6.png",
+    "static/media/liverpool.4af30bc5.jpg": "/newComputer/static/media/liverpool.4af30bc5.jpg",
     "static/media/manUnitedBack.122a9c01.png": "/newComputer/static/media/manUnitedBack.122a9c01.png",
     "static/media/manUnitedFront.53f9d437.png": "/newComputer/static/media/manUnitedFront.53f9d437.png",
     "static/media/mancity-back-small.b569c008.png": "/newComputer/static/media/mancity-back-small.b569c008.png",
@@ -354,7 +355,7 @@
   "entrypoints": [
     "static/js/runtime-main.0c4d8e9d.js",
     "static/js/2.0c318b34.chunk.js",
-    "static/css/main.c9e2db45.chunk.css",
-    "static/js/main.7c7f8c37.chunk.js"
+    "static/css/main.dd346106.chunk.css",
+    "static/js/main.2f3c2cb6.chunk.js"
   ]
 }
