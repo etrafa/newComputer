@@ -82,6 +82,7 @@ const RealMadridThirdShorts = () => {
         <span>
           <FontAwesomeIcon icon={faHeart} />
         </span>
+        <h4>ADD TO WISHLIST</h4>
       </div>
       <div className="thirt__description">
         <h1>DESCRIPTION</h1>

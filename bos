@@ -1,106 +1,56 @@
-// import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import "./Navbar.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
-// import { faUser } from "@fortawesome/free-solid-svg-icons";
-// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-// import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
-// import logo from "./logo.png";
+import "./Banner.css";
+import { useNavigate } from "react-router-dom";
 
-// const Header = () => {
-//   const [isActive, setActive] = useState("false");
-
-//   const handleToggle = () => {
-//     setActive(!isActive);
-//   };
-
-//   return (
-//     <>
-//       <div className="header__container">
-//         <div
-//           className={
-//             isActive ? "hamburger__menu__content" : "hamburgerMenu__icon"
-//           }
-//         >
-//           <FontAwesomeIcon
-//             className={isActive ? "windowClose__icon" : "hamburgerMenu__icon"}
-//             onClick={handleToggle}
-//             icon={faWindowClose}
-//           ></FontAwesomeIcon>
-//           <a href="#">HOME</a>
-//           <hr />
-//           <a href="#">NEW ARRIVALS</a>
-//           <hr />
-//           <a href="#">NATIONAL TEAM</a>
-//           <hr />
-//           <a href="#">PREMIER LEAUGE</a>
-//           <hr />
-//           <a href="#">BUNDESLIGA</a>
-//           <hr />
-//           <a href="#">SERIA A LEAUGE</a>
-//           <hr />
-//           <a href="#">LA LIGA LEUAGE</a>
-//           <hr />
-//           <a href="#">LIGUE 1</a>
-//           <hr />
-//           <a href="#">OTHER CLUBS</a>
-//           <hr />
-//         </div>
-//         <FontAwesomeIcon
-//           className="hamburgerMenu__icon"
-//           onClick={handleToggle}
-//           icon={faBars}
-//         ></FontAwesomeIcon>
-//         <div className="header__container__right">
-//           <FontAwesomeIcon
-//             className="searchBar__icon"
-//             icon={faSearch}
-//           ></FontAwesomeIcon>
-//           <FontAwesomeIcon
-//             className="user__icon"
-//             icon={faUser}
-//           ></FontAwesomeIcon>
-//           <FontAwesomeIcon
-//             className="shoppingCart__icon"
-//             icon={faShoppingCart}
-//           ></FontAwesomeIcon>
-//         </div>
-//       </div>
-//       <div className="logo">
-//         <Link to={"/"}>
-//           <img src={logo} alt="" />
-//         </Link>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Header;
-
-import nationalTeamData from "./NationalTeamData";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import "./Leauges.css";
-
-const NationalTeam = () => {
+const Banner = () => {
+  let navigate = useNavigate();
   return (
-    <div className="sales__container">
-      {nationalTeamData.map((sales) => {
-        const { id, text, image, route } = sales;
-        return (
-          <div key={id}>
-            <Link to={route}>
-              <img src={image} alt="" />
-            </Link>
-            <Link to={route}>{text}</Link>
-            <p className="best__seller__price">$ 50.00</p>
-          </div>
-        );
-      })}
+    <div className="banner__container">
+      <img
+        onClick={() => {
+          navigate("./liverpool-sales");
+        }}
+        src="https://www.hnfootball.ru/media/liverpool.png"
+        alt=""
+      />
+      <img
+        onClick={() => {
+          navigate("./mancity-sales");
+        }}
+        src="https://www.hnfootball.ru/media/mancity.png"
+        alt=""
+      />
+
+      <img
+        onClick={() => {
+          navigate("./manunited-sales");
+        }}
+        src="https://www.hnfootball.ru/media/manunited.png"
+        alt=""
+      />
+      <img
+        onClick={() => {
+          navigate("./arsenal-sales");
+        }}
+        src="https://www.hnfootball.ru/media/arsenal.png"
+        alt=""
+      />
     </div>
   );
 };
 
-export default NationalTeam;
+export default Banner;
+
+
+
+.heart__icon {
+  color: #808080;
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 0.3rem;
+  margin-top: 2rem;
+  gap: 2.5rem;
+  line-height: 28px;
+  display: inline-block;
+}

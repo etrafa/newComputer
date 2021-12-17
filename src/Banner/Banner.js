@@ -1,5 +1,6 @@
 import "./Banner.css";
 import { useNavigate } from "react-router-dom";
+import LiverpoolAsset from "./banner-asset/liverpool.jpg";
 
 const Banner = () => {
   let navigate = useNavigate();
@@ -9,7 +10,7 @@ const Banner = () => {
         onClick={() => {
           navigate("./liverpool-sales");
         }}
-        src="https://www.hnfootball.ru/media/liverpool.png"
+        src={LiverpoolAsset}
         alt=""
       />
       <img

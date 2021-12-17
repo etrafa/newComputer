@@ -141,15 +141,13 @@
 
 .heart__icon {
   color: #808080;
-  width: 36px;
-  height: 36px;
-  border: 1px solid black;
+  width: 140px;
+  height: 60px;
+  border: 1px solid #444;
   text-align: center;
   padding-top: 0.3rem;
-  margin-top: 2rem;
-  gap: 2.5rem;
+  margin: 2rem 1rem;
   line-height: 28px;
-  display: inline-block;
 }
 
 .thirt__description {

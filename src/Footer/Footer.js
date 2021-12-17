@@ -73,7 +73,9 @@ const Footer = () => {
             <hr />
             <ul>
               <li>
-                <a href="#">example@gmail.com</a>
+                <a href="mailto:etemsenel96@hotmail.de">
+                  etemsenel96@hotmail.de
+                </a>
               </li>
             </ul>
           </div>
