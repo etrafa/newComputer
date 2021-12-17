@@ -5,9 +5,13 @@ import bundesLigaData from "./BundesLigaData";
 
 const BundesLiga = () => {
   const [showItem, setShowItems] = useState(6);
+  const [visible, setVisible] = useState(true);
 
   const showMoreItems = () => {
     setShowItems((previous) => previous + 6);
+    if (showItem >= 18) {
+      setVisible(false);
+    }
   };
 
   return (
@@ -20,13 +24,20 @@ const BundesLiga = () => {
               <Link to={route}>
                 <img src={image} alt="" />
               </Link>
-              <Link to={route}>{text}</Link>
+              <Link to={route}>
+                <p className="tshirt__names">{text}</p>
+              </Link>
               <p className="best__seller__price">{price}</p>
             </div>
           );
         })}
       </div>
-      <button className="show__more__button" onClick={showMoreItems}>
+      <button
+        className={
+          visible ? "show__more__button" : "show__more__button-deactive"
+        }
+        onClick={showMoreItems}
+      >
         Show More
       </button>
     </>

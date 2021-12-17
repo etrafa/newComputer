@@ -13,7 +13,7 @@ const laLigaData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/r/e/real-madrid-home-football-shirt-21-22.jpeg",
     price: "$50.00",
-    route: "/real-madrid-tshirt-21/22-away",
+    route: "/real-madrid-tshirt-21/22-home",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const laLigaData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/r/e/real-madrid-home-kids-football-kit-21-22.jpeg",
     price: "$50.00",
-    route: "/real-madrid-kids-tshirt-21/22-away",
+    route: "/real-madrid-kids-tshirt-21/22-home",
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ const laLigaData = [
   },
   {
     id: 10,
-    text: "Barcelona Home Kids Football Kit 21/22",
+    text: "Barcelona Away Kids Football Kit 21/22",
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/b/a/barcelona-away-kids-football-kit-21-22.jpeg",
     price: "$50.00",

@@ -53,7 +53,7 @@ const leaugeOneData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/n/r/nrsgqmxm_mes3.png",
     price: "$55.00",
-    route: "/psg-shorts-messi-21/22-away",
+    route: "/psg/lionel_messi-21/22-away",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const leaugeOneData = [
     image:
       "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/c/s/cs1mv2hw_mes3.png",
     price: "$55.00",
-    route: "/psg-shorts-messi-21/22-home",
+    route: "/psg/lionel_messi-21/22-home",
   },
   {
     id: 9,

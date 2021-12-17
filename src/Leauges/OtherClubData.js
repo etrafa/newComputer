@@ -67,7 +67,7 @@ const otherClubData = [
     id: 9,
     text: "Ajax Third Football Shorts 21/22",
     image:
-      "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/j/ajax-away-football-shorts-21-22.jpeg",
+      "https://www.hnfootball.ru/media/catalog/product/cache/1/small_image/300x300/9df78eab33525d08d6e5fb8d27136e95/a/j/ajax-third-football-shorts-21-22.jpeg",
     price: "$15.00",
     route: "/ajax-shorts-21/22-third",
   },

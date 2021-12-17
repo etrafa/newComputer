@@ -155,7 +155,52 @@ import DortmundAwayShort from "./Leauges/Bundesliga-Pages/DortmunAwayShort";
 import DortmundHomeShort from "./Leauges/Bundesliga-Pages/DortmundHomeShort";
 import LeipzigThirdShirt from "./Leauges/Bundesliga-Pages/LeipzigThirdShirt";
 import LeipzigAwayShirt from "./Leauges/Bundesliga-Pages/LeipzigAwayShirt";
-
+import AtleticoMadridAwayShirt from "./Leauges/LaLiga-Pages/AtleticoMadridAwayShirt";
+import AtleticoMadridAwayShorts from "./Leauges/LaLiga-Pages/AtleticoMadridAwayShorts";
+import AtleticoMadridHomeShirt from "./Leauges/LaLiga-Pages/AtleticoMadridHomeShirt";
+import AtleticoMadridHomeShorts from "./Leauges/LaLiga-Pages/AtleticoMadridHomeShorts";
+import AtleticoMadridThirdShirt from "./Leauges/LaLiga-Pages/AtleticoMadridThirdShirt";
+import BarcelonaAwayKids from "./Leauges/LaLiga-Pages/BarcelonaAwayKids";
+import BarcelonaAwayShirt from "./Leauges/LaLiga-Pages/BarcelonaAwayShirt";
+import BarcelonaAwayShorts from "./Leauges/LaLiga-Pages/BarcelonaAwayShorts";
+import BarcelonaHomeShirt from "./Leauges/LaLiga-Pages/BarcelonaHomeShirt";
+import BarcelonaHomeShorts from "./Leauges/LaLiga-Pages/BarcelonaHomeShorts";
+import BarcelonaThirdShirt from "./Leauges/LaLiga-Pages/BarcelonaThirdShirt";
+import BarcelonaThirdShort from "./Leauges/LaLiga-Pages/BarcelonaThirdShort";
+import RealMadridAwayLong from "./Leauges/LaLiga-Pages/RealMadridAwayLong";
+import RealMadridAwayShirt from "./Leauges/LaLiga-Pages/RealMadridAwayShirt";
+import RealMadridAwayShorts from "./Leauges/LaLiga-Pages/RealMadridAwayShorts";
+import RealMadridHomeKids from "./Leauges/LaLiga-Pages/RealMadridHomeKids";
+import RealMadridHomeLong from "./Leauges/LaLiga-Pages/RealMadridHomeLong";
+import RealMadridHome from "./Leauges/LaLiga-Pages/RealMadridHomeShirt";
+import RealMadridHomeShorts from "./Leauges/LaLiga-Pages/RealMadridHomeShorts";
+import RealMadridThirdShirt from "./Leauges/LaLiga-Pages/RealMadridThirdShirt";
+import RealMadridThirdShorts from "./Leauges/LaLiga-Pages/RealMadridThirdShorts";
+import BarcelonaThirdShorts from "./Leauges/LaLiga-Pages/BarcelonaThirdShort";
+import AjaxAwayShirt from "./Leauges/OtherClub-Pages/AjaxAwayShirt";
+import CelticAwayShirt from "./Leauges/OtherClub-Pages/CelticAwayShirt";
+import CelticHomeShirt from "./Leauges/OtherClub-Pages/CelticHomeShirt";
+import PortoThirdShirt from "./Leauges/OtherClub-Pages/PortoThirdShirt";
+import PortoAwayShirt from "./Leauges/OtherClub-Pages/PortoAwayShirt";
+import PortoHomeShirt from "./Leauges/OtherClub-Pages/PortoHomeShirt";
+import AjaxThirdKids from "./Leauges/OtherClub-Pages/AjaxThirdkids";
+import AjaxThirdShort from "./Leauges/OtherClub-Pages/AjaxThirdShort";
+import AjaxAwayShort from "./Leauges/OtherClub-Pages/AjaxAwayShort";
+import AjaxHomeShort from "./Leauges/OtherClub-Pages/AjaxHomeShort";
+import AjaxHomeShirt from "./Leauges/OtherClub-Pages/AjaxHomeShirt";
+import BenficaThirdShirt from "./Leauges/OtherClub-Pages/BenficaThirdShirt";
+import BenficaAwayShirt from "./Leauges/OtherClub-Pages/BenficaAwayShirt";
+import BenficaHomeShirt from "./Leauges/OtherClub-Pages/BenficaHomeShirt";
+import BenficaAwayShort from "./Leauges/OtherClub-Pages/BenficaAwayShort";
+import BenficaHomeShort from "./Leauges/OtherClub-Pages/BenficaHomeShort";
+import PsgHomeWomen from "./Leauges/LigueOne-Pages/PsgHomeWomen";
+import PsgHomeKids from "./Leauges/LigueOne-Pages/PsgHomeKids";
+import PsgThirdKids from "./Leauges/LigueOne-Pages/PsgThirdKids";
+import PsgThirdShirt from "./Leauges/LigueOne-Pages/PsgThirdShirt";
+import PsgAwayShirt from "./Leauges/LigueOne-Pages/PsgAwayShirt";
+import PsgThirdShort from "./Leauges/LigueOne-Pages/PsgThirdShort";
+import PsgAwayShort from "./Leauges/LigueOne-Pages/PsgAwayShort";
+import PsgHomeShort from "./Leauges/LigueOne-Pages/PsgHomeShort";
 function App() {
   return (
     <>
@@ -644,6 +689,143 @@ function App() {
             path="/leipzig-tshirt-21/22-away"
             element={<LeipzigAwayShirt />}
           />
+          <Route
+            path="/real-madrid-long-sleeve-tshirt-21/22-home"
+            element={<RealMadridHomeLong />}
+          />
+          <Route
+            path="/real-madrid-tshirt-21/22-home"
+            element={<RealMadridHome />}
+          />
+          <Route
+            path="/real-madrid-kids-tshirt-21/22-home"
+            element={<RealMadridHomeKids />}
+          />
+          <Route
+            path="/atletico-madrid-tshirt-21/22-third"
+            element={<AtleticoMadridThirdShirt />}
+          />
+          <Route
+            path="/atletico-madrid-tshirt-21/22-away"
+            element={<AtleticoMadridAwayShirt />}
+          />
+          <Route
+            path="/atletico-madrid-shorts-21/22-away"
+            element={<AtleticoMadridAwayShorts />}
+          />
+          <Route
+            path="/atletico-madrid-tshirt-21/22-home"
+            element={<AtleticoMadridHomeShirt />}
+          />
+          <Route
+            path="/atletico-madrid-shorts-21/22-home"
+            element={<AtleticoMadridHomeShorts />}
+          />
+          <Route
+            path="/barcelona-shorts-21/22-third"
+            element={<BarcelonaThirdShorts />}
+          />
+          <Route
+            path="/barcelona-tshirt-21/22-third"
+            element={<BarcelonaThirdShirt />}
+          />
+          <Route
+            path="/barcelona-kids-tshirt-21/22-away"
+            element={<BarcelonaAwayKids />}
+          />
+          <Route
+            path="/barcelona-shorts-21/22-away"
+            element={<BarcelonaAwayShorts />}
+          />
+          <Route
+            path="/barcelona-shorts-21/22-home"
+            element={<BarcelonaHomeShorts />}
+          />
+          <Route
+            path="/barcelona-tshirt-21/22-home"
+            element={<BarcelonaHomeShirt />}
+          />
+          <Route
+            path="/real-madrid-tshirt-21/22-third"
+            element={<RealMadridThirdShirt />}
+          />
+          <Route
+            path="/real-madrid-shorts-21/22-third"
+            element={<RealMadridThirdShorts />}
+          />
+          <Route
+            path="/real-madrid-tshirt-21/22-away"
+            element={<RealMadridAwayShirt />}
+          />
+          <Route
+            path="/real-madrid-long-sleeve-tshirt-21/22-away"
+            element={<RealMadridAwayLong />}
+          />
+          <Route
+            path="/real-madrid-shorts-21/22-away"
+            element={<RealMadridAwayShorts />}
+          />
+          <Route
+            path="/real-madrid-shorts-21/22-home"
+            element={<RealMadridHomeShorts />}
+          />
+          <Route path="/ajax-tshirt-21/22-away" element={<AjaxAwayShirt />} />
+          <Route
+            path="/celtic-tshirt-21/22-away"
+            element={<CelticAwayShirt />}
+          />
+          <Route
+            path="/celtic-tshirt-21/22-home"
+            element={<CelticHomeShirt />}
+          />
+          <Route
+            path="/porto-tshirt-21/22-third"
+            element={<PortoThirdShirt />}
+          />
+          <Route path="/porto-tshirt-21/22-away" element={<PortoAwayShirt />} />
+          <Route path="/porto-tshirt-21/22-home" element={<PortoHomeShirt />} />
+          <Route
+            path="/ajax-tshirt-kids-21/22-third"
+            element={<AjaxThirdKids />}
+          />
+          <Route path="/ajax-shorts-21/22-third" element={<AjaxThirdShort />} />
+          <Route path="/ajax-shorts-21/22-away" element={<AjaxAwayShort />} />
+          <Route path="/ajax-shorts-21/22-home" element={<AjaxHomeShort />} />
+          <Route path="/ajax-tshirt-21/22-home" element={<AjaxHomeShirt />} />
+          <Route
+            path="/benfica-tshirt-21/22-third"
+            element={<BenficaThirdShirt />}
+          />
+          <Route
+            path="/benfica-tshirt-21/22-away"
+            element={<BenficaAwayShirt />}
+          />
+          <Route
+            path="/benfica-tshirt-21/22-home"
+            element={<BenficaHomeShirt />}
+          />
+          <Route
+            path="/benfica-shorts-21/22-away"
+            element={<BenficaAwayShort />}
+          />
+          <Route
+            path="/benfica-shorts-21/22-home"
+            element={<BenficaHomeShort />}
+          />
+          <Route
+            path="/psg-tshirt-women-21/22-home"
+            element={<PsgHomeWomen />}
+          />
+          <Route path="/psg-tshirt-kids-21/22-home" element={<PsgHomeKids />} />
+          <Route
+            path="/psg-tshirt-kids-21/22-third"
+            element={<PsgThirdKids />}
+          />
+          <Route path="/psg-tshirt-21/22-third" element={<PsgThirdShirt />} />
+          <Route path="/psg-tshirt-21/22-away" element={<PsgAwayShirt />} />
+          <Route path="/psg-shorts-21/22-third" element={<PsgThirdShort />} />
+          <Route path="/psg-shorts-21/22-away" element={<PsgAwayShort />} />
+          <Route path="/psg-shorts-21/22-home" element={<PsgHomeShort />} />
         </Routes>
         <Footer />
       </Router>
