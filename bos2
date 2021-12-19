@@ -1,0 +1,329 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react/cjs/react.development";
+import ajaxFront from "./bestSellers-asset/ajaxFront.jpeg";
+import ajaxFrontSmall from "./bestSellers-asset/ajaxFrontSmall.jpg";
+import "../Pages/ShirtSales.css";
+
+const AjaxTshirtThird = () => {
+  let dropDownSizeValue;
+  const [cartText, setCartText] = useState("Add to Cart");
+  const [wishColor, setWishColor] = useState(true);
+
+  const handleWishColor = () => {
+    setWishColor(!wishColor);
+  };
+  const dropDownValueHandler = (e) => {
+    dropDownSizeValue = e.target.value;
+    console.log(dropDownSizeValue);
+  };
+
+  const addCartHandler = () => {
+    setCartText("Added ✓");
+  };
+
+  return (
+    <div className="shirtSales__container">
+      <img className="mainShirt__front" src={ajaxFront} alt="" />
+      <div className="mainShirt__small">
+        <img src={ajaxFrontSmall} alt="" />
+      </div>
+      <h1>AJAX THIRD FOOTBALL SHIRT 21/22</h1>
+      <hr />
+      <div className="shirtSales__price__container">
+        <p className="shirtSales__price">$50.00</p>
+        <p className="in__stock">In Stock</p>
+      </div>
+      <hr className="price__hr" />
+      <div className="user__star">
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+      </div>
+      <hr className="user__star__hr" />
+      <div className="size__chart">
+        <a href="#">
+          <p>Size Chart</p>
+        </a>
+        <a href="#">
+          <p>Have a Question?</p>
+        </a>
+      </div>
+      <hr className="size__chart__hr" />
+      <div className="shipping__information">
+        <ul>
+          <li>Ship out within 1-3 business days.</li>
+          <li>
+            Shipping Time: DHL/Fedex (5-15 business days) | International mail
+            (10-40 business days)
+          </li>
+        </ul>
+      </div>
+      <div className="tshirtSales__additional__parts">
+        <div className="tshirt__size">
+          <label htmlFor="size">
+            <span>*</span>Size
+          </label>
+          <select onChange={dropDownValueHandler} name="size" id="size">
+            <option value="#" selected disabled>
+              -- Please Select --
+            </option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="xLarge">XL</option>
+            <option value="2xLarge">2XL</option>
+          </select>
+        </div>
+        <div className="tshirt__name">
+          <label htmlFor="name">
+            Name<span> +$3.00</span>
+          </label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div className="tshirt__number">
+          <label htmlFor="name">
+            Number <span>+$3.00</span>
+          </label>
+          <input type="text" name="number" id="number" />
+        </div>
+        <p>* Required Fields</p>
+      </div>
+      <div className="heart__icon">
+        <div className="add__to__wishlist">
+          <span
+            className={
+              wishColor ? "add__to__wishlist-color" : "add__to__wishlist-red"
+            }
+            onClick={handleWishColor}
+          >
+            <FontAwesomeIcon icon={faHeart} />
+          </span>
+          <h4 onClick={handleWishColor}>Add To Wishlist</h4>
+        </div>
+        <button type="submit" onClick={addCartHandler}>
+          {cartText}
+        </button>
+      </div>
+      <div className="thirt__description">
+        <h1>DESCRIPTION</h1>
+        <hr />
+        <div className="tshirt__features">
+          <div className="tshirt__list">
+            <p>&gt; 2021-2022</p>
+            <p>&gt; Men</p>
+            <p>&gt; Short sleeves</p>
+            <p>&gt; Breathable technology</p>
+            <p>&gt; Club crest</p>
+            <p>&gt; Shirt sponsor</p>
+            <p>&gt; 100% Polyester</p>
+          </div>
+          <p className="tshirt__description__text">
+            <span>Customize your jerseys: </span>In the options above you can
+            also choose to customize this jersey with a name and number of your
+            choice which is applied in store using official League printing, we
+            also have the option to add patches too! Make this Football Shirt
+            your own by entering your details correctly before heading to the
+            checkout. Our variety of international shipping methods will have
+            your jersey in your hands in no time!
+          </p>
+          <img src={ajaxFront} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AjaxTshirtThird;
+
+
+
+
+.shirtSales__container {
+    margin-top: 2rem;
+  }
+  
+  .mainShirt__front {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  
+  .mainShirt__small {
+    margin-left: 1rem;
+  }
+  
+  .mainShirt__small img {
+    margin: 2rem 0.5rem;
+    border: 1px solid #808080;
+    cursor: pointer;
+  }
+  
+  .shirtSales__container h1 {
+    color: #444444;
+    font-weight: bold;
+    font-size: 120.57%;
+    margin: 15px 0 10px 15px;
+  }
+  
+  .shirtSales__price__container {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .shirtSales__price {
+    font-size: 2em;
+    color: #941212;
+    font-weight: normal;
+    line-height: 28px;
+  }
+  
+  .price__hr {
+    margin-top: 1rem;
+  }
+  
+  .in__stock {
+    margin-left: 2rem;
+    border: 1px solid #ddd;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  .user__star {
+    color: #fea500;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .user__star__hr {
+    margin-top: 1rem;
+  }
+  
+  .size__chart {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .size__chart a:first-child {
+    color: #ff0000;
+    font-size: 1.1em;
+    text-decoration: underline;
+  }
+  
+  .size__chart a:last-child {
+    color: #000;
+    font-size: 1.1em;
+  }
+  
+  .size__chart__hr {
+    margin-top: 1rem;
+  }
+  
+  .shipping__information {
+    margin-top: 1rem;
+    padding: 20px;
+  }
+  
+  .tshirtSales__additional__parts {
+    background-color: #f5f5f5;
+    width: 95%;
+    height: 300px;
+    margin: 3rem auto 0;
+    color: #777777;
+  }
+  .tshirt__size,
+  .tshirt__name,
+  .tshirt__number {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+  
+  .tshirt__size select,
+  .tshirt__name input,
+  .tshirt__number input {
+    width: 240px;
+    height: 30px;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+  
+  .tshirt__size span {
+    color: #ff0000;
+  }
+  
+  .tshirt__name span,
+  .tshirt__number span {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .tshirtSales__additional__parts p {
+    color: #ff0000;
+    margin-top: 2rem;
+  }
+  
+  .shirtSales__container button {
+    display: block;
+    width: 122px;
+    height: 48px;
+    background-color: #fea500;
+    color: #000;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .heart__icon {
+    color: #808080;
+    width: 140px;
+    height: 60px;
+    border: 1px solid #444;
+    text-align: center;
+    padding-top: 0.3rem;
+    margin: 2rem 1rem;
+    line-height: 28px;
+  }
+  
+  .thirt__description {
+    width: 95%;
+    margin: 2rem auto;
+    border: 1px solid #e9e9e9;
+  }
+  
+  .thirt__description h1 {
+    color: #fea500;
+    font-weight: 700;
+  }
+  
+  .tshirt__list {
+    margin-top: 1rem;
+    padding-left: 2rem;
+    line-height: 28px;
+  }
+  
+  .tshirt__description__text {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    font-weight: bold;
+  }
+  
+  .tshirt__description__text span {
+    color: #ff0000;
+  }
+  
+  .thirt__description img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  

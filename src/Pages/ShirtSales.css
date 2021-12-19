@@ -126,28 +126,48 @@
   margin-top: 2rem;
 }
 
-.shirtSales__container button {
-  display: block;
-  width: 222px;
-  height: 48px;
-  background-color: #000;
-  color: #fff;
-  font-weight: bolder;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 1rem;
-  margin-left: 0.5rem;
+.heart__icon {
+  display: flex;
 }
 
-.heart__icon {
-  color: #808080;
+.add__to__wishlist {
   width: 140px;
   height: 60px;
   border: 1px solid #444;
   text-align: center;
   padding-top: 0.3rem;
-  margin: 2rem 1rem;
+  margin: 2rem 2.5rem;
   line-height: 28px;
+}
+
+.add__to__wishlist-color {
+  color: #808080;
+}
+
+.add__to__wishlist-red {
+  color: #ff0000;
+  animation: changeColor 1s;
+}
+
+@keyframes changeColor {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.shirtSales__container button {
+  display: block;
+  width: 140px;
+  height: 60px;
+  background-color: #fea500;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 2rem 1rem;
 }
 
 .thirt__description {

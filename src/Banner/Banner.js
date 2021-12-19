@@ -1,6 +1,9 @@
 import "./Banner.css";
 import { useNavigate } from "react-router-dom";
-import LiverpoolAsset from "./banner-asset/liverpool.jpg";
+import LiverpoolAsset from "./banner-asset/liverpool.png";
+import ManCityAsset from "./banner-asset/mancity.png";
+import ManUnitedAsset from "./banner-asset/manunited.png";
+import ArsenalAsset from "./banner-asset/arsenal.png";
 
 const Banner = () => {
   let navigate = useNavigate();
@@ -17,7 +20,7 @@ const Banner = () => {
         onClick={() => {
           navigate("./mancity-sales");
         }}
-        src="https://www.hnfootball.ru/media/mancity.png"
+        src={ManCityAsset}
         alt=""
       />
 
@@ -25,14 +28,14 @@ const Banner = () => {
         onClick={() => {
           navigate("./manunited-sales");
         }}
-        src="https://www.hnfootball.ru/media/manunited.png"
+        src={ManUnitedAsset}
         alt=""
       />
       <img
         onClick={() => {
           navigate("./arsenal-sales");
         }}
-        src="https://www.hnfootball.ru/media/arsenal.png"
+        src={ArsenalAsset}
         alt=""
       />
     </div>

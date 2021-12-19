@@ -1,56 +1,155 @@
-import "./Banner.css";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
+import logo from "./logo.png";
 
-const Banner = () => {
-  let navigate = useNavigate();
+const Header = () => {
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   return (
-    <div className="banner__container">
-      <img
-        onClick={() => {
-          navigate("./liverpool-sales");
-        }}
-        src="https://www.hnfootball.ru/media/liverpool.png"
-        alt=""
-      />
-      <img
-        onClick={() => {
-          navigate("./mancity-sales");
-        }}
-        src="https://www.hnfootball.ru/media/mancity.png"
-        alt=""
-      />
-
-      <img
-        onClick={() => {
-          navigate("./manunited-sales");
-        }}
-        src="https://www.hnfootball.ru/media/manunited.png"
-        alt=""
-      />
-      <img
-        onClick={() => {
-          navigate("./arsenal-sales");
-        }}
-        src="https://www.hnfootball.ru/media/arsenal.png"
-        alt=""
-      />
-    </div>
+    <>
+      <div className="header__container">
+        <div
+          className={
+            isActive
+              ? "hamburger__menu__content__deactive"
+              : "hamburger__menu__content"
+          }
+        >
+          <FontAwesomeIcon
+            className={isActive ? "windowClose__icon" : "windowClose__icon"}
+            onClick={handleToggle}
+            icon={faWindowClose}
+          ></FontAwesomeIcon>
+          <Link to={"/"}>HOME</Link>
+          <hr />
+          <Link to={"./national-team"}>NATIONAL TEAM</Link>
+          <hr />
+          <Link to={"./premier-leauge"}>PREMIER LEAUGE</Link>
+          <hr />
+          <Link to={"./bundesliga"}>BUNDESLIGA</Link>
+          <hr />
+          <Link to={"./laliga-leauge"}>LA LIGA</Link>
+          <hr />
+          <Link to={"./ligue-one"}>LIGUE 1</Link>
+          <hr />
+          <Link to={"./other-clubs"}>OTHER CLUBS</Link>
+          <hr />
+        </div>
+        <FontAwesomeIcon
+          className="hamburgerMenu__icon"
+          onClick={handleToggle}
+          icon={faBars}
+        ></FontAwesomeIcon>
+        <div className="header__container__right">
+          <FontAwesomeIcon
+            className="searchBar__icon"
+            icon={faSearch}
+          ></FontAwesomeIcon>
+          <FontAwesomeIcon
+            className="user__icon"
+            icon={faUser}
+          ></FontAwesomeIcon>
+          <FontAwesomeIcon
+            className="shoppingCart__icon"
+            icon={faShoppingCart}
+            onClick={() => {
+              console.log("hey");
+            }}
+          ></FontAwesomeIcon>
+        </div>
+      </div>
+      <div className="logo">
+        <Link to={"/"}>
+          <img src={logo} alt="" />
+        </Link>
+      </div>
+    </>
   );
 };
 
-export default Banner;
+export default Header;
 
 
 
-.heart__icon {
-  color: #808080;
-  width: 36px;
-  height: 36px;
-  border: 1px solid black;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container__right {
+  display: flex;
+}
+
+.hamburgerMenu__icon {
+  font-size: 22px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.hamburger__menu__content {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+}
+.hamburger__menu__content__deactive {
+  display: none;
+}
+.hamburger__menu__content a {
+  color: #fff;
+  text-decoration: none;
+  padding-top: 1.5rem;
   text-align: center;
-  padding-top: 0.3rem;
-  margin-top: 2rem;
-  gap: 2.5rem;
-  line-height: 28px;
-  display: inline-block;
+  font-size: 14px;
+}
+.hamburger__menu__content hr {
+  margin-top: 0.5rem;
+}
+
+.windowClose__icon {
+  margin-left: auto;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.searchBar__icon,
+.user__icon,
+.shoppingCart__icon {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.logo img {
+  display: block;
+  max-width: 15%;
+  margin: 1rem auto 0;
+  cursor: pointer;
+}
+
+.shoppingCart__modal {
+  width: 100%;
+  height: 300px;
+  background-color: #444;
+}
+
+@media only screen and (min-width: 892px) {
+  .logo img {
+    max-width: 5%;
+  }
 }

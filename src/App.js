@@ -18,6 +18,7 @@ import PsgTshirtHome from "./BestSellers/Psg-tshirt-home";
 import ChelseaTshirtHome from "./BestSellers/Chelsea-tshirt-home";
 import TottenhamTshirtAway from "./BestSellers/Tottenham-tshirt-away";
 import AboutUs from "./Footer/AboutUs";
+import CreateAccount from "./Footer/CreateAccount";
 import Delivery from "./Footer/Delivery";
 import Privacy from "./Footer/Privacy";
 import Terms from "./Footer/Terms";
@@ -259,6 +260,7 @@ function App() {
           <Route path="/shipping-delivery" element={<Shipping />} />
           <Route path="/return-policy" element={<ReturnPolicy />} />
           <Route path="/payment-method" element={<PaymentMethod />} />
+          <Route path="/sign-up" element={<CreateAccount />} />
           <Route path="/national-team" element={<NationalTeam />} />
           <Route path="/premier-leauge" element={<PremierLeauge />} />
           <Route path="/bundesliga" element={<BundesLiga />} />

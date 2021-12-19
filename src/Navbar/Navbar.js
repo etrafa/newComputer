@@ -11,9 +11,20 @@ import logo from "./logo.png";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
+  const [cartItem, setCartItem] = useState(0);
+  const [searchBar, setSearchBar] = useState(false);
+  const [shoppingCartActive, setShoppingCartActive] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
+  };
+
+  const searchBarToggle = () => {
+    setSearchBar(!searchBar);
+  };
+
+  const shoppingCartToggle = () => {
+    setShoppingCartActive(!shoppingCartActive);
   };
 
   return (
@@ -52,19 +63,40 @@ const Header = () => {
           icon={faBars}
         ></FontAwesomeIcon>
         <div className="header__container__right">
+          <input
+            type="text"
+            placeholder="Search"
+            className={
+              searchBar ? "searchBar__text" : "searchBar__text-deactive"
+            }
+          />
           <FontAwesomeIcon
             className="searchBar__icon"
             icon={faSearch}
+            onClick={searchBarToggle}
           ></FontAwesomeIcon>
           <FontAwesomeIcon
             className="user__icon"
             icon={faUser}
           ></FontAwesomeIcon>
-          <FontAwesomeIcon
-            className="shoppingCart__icon"
-            icon={faShoppingCart}
-          ></FontAwesomeIcon>
+          <div className="shoppingCart__container">
+            <FontAwesomeIcon
+              className="shoppingCart__icon"
+              icon={faShoppingCart}
+              onClick={shoppingCartToggle}
+            ></FontAwesomeIcon>
+            <p className="shoppingCart__item">{cartItem}</p>
+          </div>
         </div>
+      </div>
+      <div
+        className={
+          shoppingCartActive
+            ? "shoppingCart__modal"
+            : "shoppingCart__modal-deactive"
+        }
+      >
+        <p>Your cart is empty!</p>
       </div>
       <div className="logo">
         <Link to={"/"}>

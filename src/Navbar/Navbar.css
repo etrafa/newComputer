@@ -7,6 +7,32 @@
   display: flex;
 }
 
+.searchBar__text {
+  width: 160px;
+  height: 30px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #fea500;
+  text-align: center;
+}
+.searchBar__text-deactive {
+  display: none;
+}
+
+.shoppingCart__modal {
+  width: 85%;
+  height: 200px;
+  background-color: #444;
+  margin: 2rem auto;
+  text-align: center;
+  padding-top: 4rem;
+  color: #fff;
+}
+
+.shoppingCart__modal-deactive {
+  display: none;
+}
+
 .hamburgerMenu__icon {
   font-size: 22px;
   margin-top: 1rem;
@@ -49,6 +75,25 @@
   cursor: pointer;
   margin-top: 1rem;
   margin-left: 1rem;
+}
+
+.shoppingCart__container {
+  position: relative;
+}
+
+.shoppingCart__item {
+  background-color: #fea500;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  position: absolute;
+  padding-top: 0.1rem;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  right: 0;
 }
 
 .logo img {

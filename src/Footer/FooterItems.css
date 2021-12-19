@@ -5,7 +5,8 @@
 .faqHelp__container h1,
 .ship__container h1,
 .returnPolicy__container h1,
-.payment__container h1 {
+.payment__container h1,
+.create__account__container h1 {
   font-size: 24px;
   font-weight: bold;
   color: #444444;
@@ -56,4 +57,52 @@
 .payment__text img {
   max-width: 100%;
   height: auto;
+}
+
+.create__account__form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.create__account__form input {
+  width: 85%;
+  height: 30px;
+}
+
+.create__account__form label {
+  color: #444;
+  margin-top: 1rem;
+}
+
+.create__account__form button {
+  width: 180px;
+  height: 60px;
+  margin: 2rem auto 0;
+  background-color: #fea500;
+  color: #fff;
+  font-weight: bold;
+}
+
+.create__account__container {
+  position: relative;
+}
+
+.sign__up__modal {
+  width: 280px;
+  height: 180px;
+  background-color: #444;
+  text-align: center;
+  padding-top: 3rem;
+  position: absolute;
+  top: 280px;
+  left: 40px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  color: green;
+  font-size: 36px;
+}
+
+.sign__up__modal-active {
+  display: none;
 }
