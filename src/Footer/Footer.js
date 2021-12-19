@@ -64,7 +64,7 @@ const Footer = () => {
                 <Link to={"/my-orders"}>My Orders</Link>
               </li>
               <li>
-                <Link to={"/forget-password"}>Forget Password</Link>
+                <Link to={"/forget-password"}>Forgot Password</Link>
               </li>
             </ul>
           </div>
