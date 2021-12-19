@@ -1,6 +1,6 @@
 import { useState } from "react/cjs/react.development";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./FooterItems.css";
 
 const CreateAccount = () => {
@@ -9,12 +9,26 @@ const CreateAccount = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  const [signUpText, setSignUpText] = useState("Success");
-  const [signUpSuccess, setSignUpSuccess] = useState(true);
+  const [signUpText, setSignUpText] = useState("");
+  const [successIcon, setSuccessIcon] = useState();
+  const [successColor, setSucessColor] = useState();
 
   const signUpHandler = (e) => {
     e.preventDefault();
-    console.log(firstName, lastName, email, password, passwordConfirm);
+    if (password !== passwordConfirm) {
+      setSignUpText("Passwords are not the same!");
+      setSuccessIcon(faTimes);
+      setSucessColor("sign__up__modal-error");
+    } else {
+      setSignUpText("We sent confirmation mail to your e-mail address.");
+      setSuccessIcon(faCheckCircle);
+      setSucessColor("sign__up__modal");
+    }
+    if (firstName === "" && lastName === "" && email === "") {
+      setSignUpText("Please fill all the area!");
+      setSuccessIcon(faTimes);
+      setSucessColor("sign__up__modal-error");
+    }
   };
 
   return (
@@ -26,6 +40,7 @@ const CreateAccount = () => {
         <label htmlFor="firstName">First Name</label>
         <input
           type="text"
+          required={true}
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
@@ -53,8 +68,8 @@ const CreateAccount = () => {
           value={passwordConfirm}
           onChange={(e) => setPasswordConfirm(e.target.value)}
         />
-        <div className="sign__up__modal">
-          <FontAwesomeIcon icon={faCheckCircle} />
+        <div className={successColor}>
+          <FontAwesomeIcon icon={successIcon} />
           <p>{signUpText}</p>
         </div>
         <button onClick={signUpHandler}>Sign Up</button>

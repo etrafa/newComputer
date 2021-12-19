@@ -6,7 +6,9 @@
 .ship__container h1,
 .returnPolicy__container h1,
 .payment__container h1,
-.create__account__container h1 {
+.create__account__container h1,
+.logIn__container h1,
+.forget__password__container h1 {
   font-size: 24px;
   font-weight: bold;
   color: #444444;
@@ -21,7 +23,8 @@
 .faqHelp__text,
 .shipping__text,
 .returnPolicy__text,
-.payment__text {
+.payment__text,
+.forget__password__text {
   border: 1px dotted #444444;
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -35,7 +38,8 @@
 .faqHelp__text p,
 .shipping__text p,
 .returnPolicy__text p,
-.payment__text p {
+.payment__text p,
+.forget__password__text p {
   padding: 20px;
   font-size: 16px;
 }
@@ -89,20 +93,60 @@
 }
 
 .sign__up__modal {
-  width: 280px;
-  height: 180px;
-  background-color: #444;
-  text-align: center;
-  padding-top: 3rem;
-  position: absolute;
-  top: 280px;
-  left: 40px;
-  border-radius: 15px;
-  margin-top: 2rem;
   color: green;
-  font-size: 36px;
+  padding-top: 0.2rem;
 }
 
-.sign__up__modal-active {
-  display: none;
+.sign__up__modal-error {
+  color: red;
+  padding-top: 0.2rem;
+}
+
+.registration__container,
+.already__registered {
+  border: 1px solid #444;
+  width: 85%;
+  margin: 0 auto;
+  height: 240px;
+  margin-top: 1.5rem;
+}
+.already__registered {
+  height: 280px;
+}
+
+.registration__container h4,
+.already__registered h4 {
+  color: #444;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.registration__container p,
+.already__registered p {
+  margin-top: 1.5rem;
+  margin-left: 0.7rem;
+}
+
+.createAccount__button,
+.logIn__button {
+  width: 140px;
+  height: 45px;
+  margin-top: 1rem;
+  float: right;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  background-color: #fea500;
+  color: #fff;
+  font-weight: bold;
+}
+
+.already__registered {
+  margin-top: 6rem;
+}
+
+.forgot__password {
+  padding-top: 0.8rem;
+  text-decoration: none;
+  color: #000;
 }

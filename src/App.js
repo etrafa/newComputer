@@ -202,6 +202,8 @@ import PsgAwayShirt from "./Leauges/LigueOne-Pages/PsgAwayShirt";
 import PsgThirdShort from "./Leauges/LigueOne-Pages/PsgThirdShort";
 import PsgAwayShort from "./Leauges/LigueOne-Pages/PsgAwayShort";
 import PsgHomeShort from "./Leauges/LigueOne-Pages/PsgHomeShort";
+import Login from "./Footer/Login";
+import ForgetPassword from "./Footer/ForgetPassword";
 function App() {
   return (
     <>
@@ -261,6 +263,10 @@ function App() {
           <Route path="/return-policy" element={<ReturnPolicy />} />
           <Route path="/payment-method" element={<PaymentMethod />} />
           <Route path="/sign-up" element={<CreateAccount />} />
+          <Route path="/my-account" element={<Login />} />
+          <Route path="/log-in" element={<Login />} />
+          <Route path="/my-orders" element={<Login />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
           <Route path="/national-team" element={<NationalTeam />} />
           <Route path="/premier-leauge" element={<PremierLeauge />} />
           <Route path="/bundesliga" element={<BundesLiga />} />
