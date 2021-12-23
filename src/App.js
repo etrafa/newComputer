@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import "./index.css";
 import Navbar from "./Navbar/Navbar";
 import HomePage from "./Homepage/HomePage";
@@ -207,7 +212,7 @@ import ForgetPassword from "./Footer/ForgetPassword";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
@@ -836,7 +841,7 @@ function App() {
           <Route path="/psg-shorts-21/22-home" element={<PsgHomeShort />} />
         </Routes>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }
