@@ -211,7 +211,7 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" index element={<HomePage />} />
           <Route path="/liverpool-sales" element={<LiverpoolSales />} />
           <Route path="/mancity-sales" element={<ManCitySales />} />
           <Route path="/manunited-sales" element={<ManUnitedSales />} />
