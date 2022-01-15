@@ -212,10 +212,11 @@ import ForgetPassword from "./Footer/ForgetPassword";
 function App() {
   return (
     <>
-      <HashRouter>
+      <Router>
         <ScrollToTop />
         <Navbar />
         <Routes>
+          <Route path="/home" index element={<HomePage />} />
           <Route path="/" index element={<HomePage />} />
           <Route path="/liverpool-sales" element={<LiverpoolSales />} />
           <Route path="/mancity-sales" element={<ManCitySales />} />
@@ -841,7 +842,7 @@ function App() {
           <Route path="/psg-shorts-21/22-home" element={<PsgHomeShort />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </Router>
     </>
   );
 }
